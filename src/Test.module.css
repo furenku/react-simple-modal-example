@@ -1,0 +1,13 @@
+.Test {
+    background-color: #0bc1ed;
+    padding: 2rem;
+
+    display: flex;
+
+}
+
+.Test > * {
+    width: 50%;
+}
+
+
