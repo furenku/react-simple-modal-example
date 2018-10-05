@@ -1,13 +1,13 @@
 import React from 'react';
 
-import styles from './Modal.module.css';
+import styles from './Modal.module.scss';
 
 const Modal = ({ children, onCloseModal }) => {
     return (
-        <>
+        <div className={styles.Modal}>
             <div className={styles.overlay}/>
 
-            <div className={styles.Modal}>
+            <div className={styles.window}>
                 
                 <header>
                     <button onClick={ () => onCloseModal() }>
@@ -25,7 +25,7 @@ const Modal = ({ children, onCloseModal }) => {
                     {children}
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

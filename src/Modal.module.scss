@@ -1,0 +1,50 @@
+$bgcolor: #def;
+
+.Modal {
+
+    .window {
+        width: 90vw;
+        height: 90vh;
+        background-color: $bgcolor;
+        position: absolute;
+        
+        margin-left: 5vw;
+        margin-top: 5vh;
+        top: 0;
+        left: 0;
+        z-index: 100;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+
+    }
+
+
+
+    .overlay {
+        
+        width: 100vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 99;
+
+        background-color: rgba(0,0,0,0.4);
+
+    }
+
+}
+
